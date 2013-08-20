@@ -1,7 +1,9 @@
 Isl::Application.routes.draw do
-  get "static_pages/home"
+  get '/home/' => "static_pages#home"
+  get '/static_pages/home'
 
-  get "static_pages/institutional"
+  get '/institutional' => "static_pages#institutional"
+  get '/static_pages/institutional'
 
   get "static_pages/projects"
 
