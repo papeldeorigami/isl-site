@@ -1,4 +1,6 @@
 Isl::Application.routes.draw do
+  resources :posts
+
   get '/home/' => "static_pages#home"
   get '/static_pages/home'
 

@@ -1,0 +1,8 @@
+<% Post.find(:all).each do |post| %>
+	<header>
+	<h4><%= link_to post.title, post %></h4>
+	</header>
+	<article>
+	<p><%= post.headline %></p>
+	</article>
+<% end %>
