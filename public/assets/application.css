@@ -6807,18 +6807,31 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 
 /* line 18, ../../app/assets/stylesheets/application.css.scss */
+.footer {
+  background-color: #f5f5f5;
+}
+
+/* line 22, ../../app/assets/stylesheets/application.css.scss */
 .invitation {
   height: 226px;
 }
 
-/* line 22, ../../app/assets/stylesheets/application.css.scss */
-.invitation > p {
-  font-size: 16px;
+/* line 26, ../../app/assets/stylesheets/application.css.scss */
+.invitation {
+  font-size: 18px;
   text-align: center;
-  padding-top: 100px;
+  vertical-align: middle;
+  padding-top: 50px;
 }
 
-/* line 29, ../../app/assets/stylesheets/application.css.scss */
+/* line 33, ../../app/assets/stylesheets/application.css.scss */
+.contact-first-page {
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* line 39, ../../app/assets/stylesheets/application.css.scss */
 .light-box {
   background-color: #f5f5f5;
   border: 1px solid #ddd;
@@ -6827,7 +6840,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   border-radius: 4px;
 }
 
-/* line 34, ../../app/assets/stylesheets/application.css.scss */
+/* line 44, ../../app/assets/stylesheets/application.css.scss */
 .posts > header > h4 {
   font-size: 14px;
 }

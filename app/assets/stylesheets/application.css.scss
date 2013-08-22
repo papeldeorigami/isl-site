@@ -14,15 +14,25 @@
 
 @import "bootstrap";
 
+.footer {
+	background-color: #f5f5f5;
+}
+
 .invitation {
 	height: 226px;
 }
 
-.invitation > p {
-	font-size: 16px;
+.invitation {
+	font-size: 18px;
 	text-align: center;
-	//vertical-align: middle;
-	padding-top: 100px;
+	vertical-align: middle;
+	padding-top: 50px;
+}
+
+.contact-first-page {
+	padding-top: 10px;
+	font-size: 18px;
+	text-align: center;
 }
 
 .light-box {

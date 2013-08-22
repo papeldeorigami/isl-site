@@ -44,14 +44,21 @@
 		</div>
 	</section>
 	<section class="span6 invitation">
-		<p><a href="#">Se inscreva</a> como voluntário e descubra que contribuir para um mundo melhor é mais fácil do que você imagina!</p>
+		<a href="#">Se inscreva</a> como voluntário e descubra que contribuir para um mundo melhor é mais fácil do que você imagina!
 	</section>
 </div>
 <div class="row">
-	<section class="span6 news-register-form">
-	Receba as novidades
+	<!--
+	<section class="span4 news-register-form">
+	<h4>Receba as novidades</h4>
     <%= form_tag("/news_register", method: "get") do %>
         <%= text_field_tag(:news_register_email) %>
 	<% end %>
+	</section>
+	-->
+	<section class="span4 offset4 contact-first-page">
+	Fale conosco<br>
+	<a href="mailto:contato@institutosarahlins.org.br">contato@institutosarahlins.org.br</a><br>
+	Telefone: (19) 35493513
 	</section>
 </div>
