@@ -1,8 +1,8 @@
-<% Post.find(:all).each do |post| %>
+<% Post.find(:all, :order => "updated_at DESC", :limit => 3).each do |post| %>
 	<header>
 	<h4><%= link_to post.title, post %></h4>
 	</header>
 	<article>
-	<p><%= post.headline %></p>
+	<p><%= post.truncated_text %></p>
 	</article>
 <% end %>

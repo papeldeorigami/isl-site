@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
   validates :text, :presence => { :message => "Por favor, escreva o texto da sua notícia."}
   validates :title, :presence => { :message => "Por favor, escreva um título."}
 
-  def headline
+  def truncated_text
   	  truncate(sanitize(text), :omission => "... (continua)", :length => 50)
   end
 end
