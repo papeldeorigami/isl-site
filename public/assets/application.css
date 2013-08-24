@@ -6812,37 +6812,12 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 
 /* line 22, ../../app/assets/stylesheets/application.css.scss */
-.invitation {
-  height: 226px;
-}
-
-/* line 26, ../../app/assets/stylesheets/application.css.scss */
-.invitation {
-  font-size: 18px;
-  text-align: center;
-  vertical-align: middle;
-  padding-top: 50px;
-}
-
-/* line 33, ../../app/assets/stylesheets/application.css.scss */
-.contact-first-page {
-  padding-top: 10px;
-  font-size: 18px;
-  text-align: center;
-}
-
-/* line 39, ../../app/assets/stylesheets/application.css.scss */
 .light-box {
   background-color: #f5f5f5;
   border: 1px solid #ddd;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-}
-
-/* line 44, ../../app/assets/stylesheets/application.css.scss */
-.posts > header > h4 {
-  font-size: 14px;
 }
 article,
 aside,
@@ -19892,6 +19867,39 @@ body {
 .carousel img {
   height: 480px;
   margin: 0 auto;
+}
+/* line 1, ../../app/assets/stylesheets/home.css.scss */
+.invitation {
+  height: 226px;
+}
+
+/* line 5, ../../app/assets/stylesheets/home.css.scss */
+.invitation {
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 50px;
+}
+
+/* line 12, ../../app/assets/stylesheets/home.css.scss */
+.contact-first-page {
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* line 18, ../../app/assets/stylesheets/home.css.scss */
+.posts > header > h4 {
+  font-size: 14px;
+}
+/* line 1, ../../app/assets/stylesheets/institutional.css.scss */
+.mission {
+  text-align: right;
+}
+
+/* line 5, ../../app/assets/stylesheets/institutional.css.scss */
+.vision {
+  text-align: left;
 }
 /* line 1, ../../app/assets/stylesheets/scaffolds.css.scss.bak */
 body {
