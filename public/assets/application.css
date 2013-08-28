@@ -19901,6 +19901,30 @@ body {
 .vision {
   text-align: left;
 }
+/* line 2, ../../app/assets/stylesheets/projects.css.scss */
+.project-images img {
+  margin-bottom: 40px;
+}
+
+/* line 7, ../../app/assets/stylesheets/projects.css.scss */
+.tigre-branco {
+  text-align: left;
+}
+
+/* line 11, ../../app/assets/stylesheets/projects.css.scss */
+.desabrochar {
+  text-align: right;
+}
+
+/* line 15, ../../app/assets/stylesheets/projects.css.scss */
+.welcome-mundo {
+  text-align: left;
+}
+
+/* line 19, ../../app/assets/stylesheets/projects.css.scss */
+.infojovem {
+  text-align: right;
+}
 /* line 1, ../../app/assets/stylesheets/scaffolds.css.scss.bak */
 body {
   background-color: #fff;
