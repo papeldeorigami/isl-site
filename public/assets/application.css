@@ -6809,9 +6809,10 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 /* line 18, ../../app/assets/stylesheets/application.css.scss */
 .footer {
   background-color: #f5f5f5;
+  text-align: center;
 }
 
-/* line 22, ../../app/assets/stylesheets/application.css.scss */
+/* line 23, ../../app/assets/stylesheets/application.css.scss */
 .light-box {
   background-color: #f5f5f5;
   border: 1px solid #ddd;
