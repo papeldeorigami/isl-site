@@ -19868,6 +19868,11 @@ body {
   height: 480px;
   margin: 0 auto;
 }
+/* line 2, ../../app/assets/stylesheets/contact.css.scss */
+.contact p {
+  text-align: center;
+  font-size: 18px;
+}
 /* line 1, ../../app/assets/stylesheets/home.css.scss */
 .invitation {
   height: 226px;
@@ -20003,4 +20008,9 @@ div.field, div.actions {
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
+}
+/* line 2, ../../app/assets/stylesheets/team.css.scss */
+.team img {
+  margin-right: auto;
+  margin-left: auto;
 }
