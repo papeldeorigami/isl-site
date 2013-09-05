@@ -5,8 +5,8 @@ big features).
 
 == Installation
 
-bundle install
-foreman start
+`bundle install`
+`foreman start`
 
 == Background information
 
