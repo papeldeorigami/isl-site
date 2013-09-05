@@ -1,17 +1,16 @@
-== Instituto Sarah Lins Website
+# Instituto Sarah Lins Website
 
 This is an institutional website, intended to be as simple as possible (no
 big features).
 
-== Installation
+# Installation
 
 ```
 bundle install
-
 foreman start
 ```
 
-== Background information
+# Background information
 
 It started as a set of static webpages implemented by a "static_pages" 
 controller.
