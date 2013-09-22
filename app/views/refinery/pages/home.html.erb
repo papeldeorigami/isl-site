@@ -1,0 +1,24 @@
+<%= render '/refinery/content_page' %>
+<section id="news">
+<% @items = Refinery::News::Item.latest(5) %>
+<%= render :partial => '/refinery/news/items/recent_posts' %>
+</section>
+
+<section id="invitation">
+<a href="#">Inscreva-se</a> como voluntário e descubra que contribuir para um mundo melhor é mais fácil do que você imagina!
+</section>
+
+<!--
+<section class="span4 news-register-form">
+<h4>Receba as novidades</h4>
+<%= form_tag("/news_register", method: "get") do %>
+	<%= text_field_tag(:news_register_email) %>
+<% end %>
+</section>
+-->
+
+<section id="contact-home">
+Fale conosco<br>
+<a href="mailto:contato@institutosarahlins.org.br">contato@institutosarahlins.org.br</a><br>
+Telefone: (19) 35493513
+</section>

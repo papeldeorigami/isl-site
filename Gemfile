@@ -16,7 +16,7 @@ gem 'bootstrap-sass'
 # notice: this version is requested by latest refinerycms-news module available
 gem 'refinerycms', '~> 2.1.0'
 
-# we could easily implement news on our own, but why bother when we already have it?
+# a refinerycms plugin to handle news
 gem 'refinerycms-news', '~> 2.1.0', :git => 'https://github.com/refinery/refinerycms-news'
 
 # use the thin server by default (because webrick must be avoided, this is what I've learned)

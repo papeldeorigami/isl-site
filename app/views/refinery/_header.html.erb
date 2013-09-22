@@ -7,7 +7,7 @@
 			<div class="container">
 				<% @menu = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self) %>
 				<%-# Quick hack to allow bootstrap-styled menu: -%>
-				<%= @menu.to_html.gsub("<ul>", "<ul class=\"nav\">").html_safe -%>
+				<%= @menu.to_html.gsub("<ul>", "<ul class=\"nav\">").html_safe unless (@menu.nil? || @menu.to_html.nil?) -%>
 			</div>
 			</nav>
 		</div>
