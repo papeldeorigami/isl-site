@@ -1,30 +1,52 @@
-<!DOCTYPE html>
-<%= render "/refinery/html_tag" %>
-<% site_bar = render('/refinery/site_bar', :head => true) -%>
-<head>
-	<%= render "/refinery/head" %>
-</head>
-<body id="<%= canonical_id @page %>">
-	<%= site_bar -%>
-	<div id="page_container">
-		<header id="header">
-		<%= render "/refinery/header" -%>
-		</header>
-		<section id="page">
-		<div class="container">
-			<div class="content">
-				<div class="row">
-					<div class="span12">
-						<%= yield %>
-					</div>
-				</div>
-			</div>
-		</div> <!--! end of .container -->
-		</section>
-		<footer>
-			<%= render "/refinery/footer" -%>
-		</footer>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Instituto Sarah Lins" %></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+	<header>
+	<div class="container">
+	<%= image_tag "logo_transparente.png" %>
 	</div>
-	<%= render "/refinery/javascripts" %>
-</body>
+	<div class="container">
+	<div class="navbar">
+		<nav class="navbar-inner">
+		<div class="container">
+			<%= render 'layouts/navigation' %>
+		</div>
+		</nav>
+	</div>
+	</div>
+	</header>
+    <div id="main" role="main">
+      <div class="container">
+        <div class="content">
+           <div class="row">
+            <div class="span12">
+              <%= render 'layouts/messages' %>
+              <%= yield %>
+            </div>
+          </div>
+		  <footer>
+		  <div class="footer">
+			  <hr>
+			  <div class="container narrow row-fluid">
+				  <div class="offset3 span6">
+				  &copy; Instituto Sarah Lins 2013 - Todos os direitos reservados
+				  </div>
+			  </div>
+		  </div>
+		  </footer>
+        </div>
+      </div> <!--! end of .container -->
+    </div> <!--! end of #main -->
+  </body>
 </html>

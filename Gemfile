@@ -1,23 +1,18 @@
 source 'https://rubygems.org'
 
 # set our ruby compiler version
-ruby '2.0.0'
+ruby '1.9.3'
 
 # set our rails version (upgrades can always be a pain)
-gem 'rails', '3.2.13'
+gem 'rails', '~> 4.0'
 
-# this specific jquery version is requested by refinerycms
-gem 'jquery-rails'#, '~> 2.0.0'
+gem 'jquery-rails'
 
 # bootstrap for styling our pages
 gem 'bootstrap-sass'
 
-# this site is completely based on refinerycms.
-# notice: this version is requested by latest refinerycms-news module available
-gem 'refinerycms', '~> 2.1.0'
-
-# a refinerycms plugin to handle news
-gem 'refinerycms-news', '~> 2.1.0', :git => 'https://github.com/refinery/refinerycms-news'
+# a lightweight CMS
+gem 'comfortable_mexican_sofa', '~> 1.9'
 
 # use the thin server by default (because webrick must be avoided, this is what I've learned)
 gem 'thin'
@@ -59,8 +54,8 @@ group :production do
 end
 
 group :assets do
-	gem 'sass-rails',   '~> 3.2.3'
-	gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',   '~> 4.0'
+  gem 'coffee-rails', '~> 4.0'
 	gem 'therubyracer', :platforms => :ruby
 	gem 'uglifier', '>= 1.0.3'
 end
