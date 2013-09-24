@@ -11,7 +11,7 @@
 /db/*.sqlite3
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
+/log
 /tmp
 # Rails
 .bundle
@@ -102,3 +102,6 @@ config/app_environment_variables.rb
 # ctags
 tags
 gems.tags
+
+# solr
+solr/data/
