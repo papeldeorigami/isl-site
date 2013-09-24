@@ -6,13 +6,19 @@ ruby '1.9.3'
 # set our rails version (upgrades can always be a pain)
 gem 'rails', '~> 4.0'
 
-gem 'jquery-rails'
+#gem 'jquery-rails'
 
 # bootstrap for styling our pages
 gem 'bootstrap-sass'
 
 # a lightweight CMS
 gem 'comfortable_mexican_sofa', '~> 1.9'
+
+# sunspot to implement site-wide search
+gem 'sunspot_rails'
+
+# to start/stop Solr
+gem 'sunspot_solr'
 
 # use the thin server by default (because webrick must be avoided, this is what I've learned)
 gem 'thin'
