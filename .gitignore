@@ -97,3 +97,8 @@ vendor/extensions/**/spec/dummy
 .env
 # sensitive configurations set in ruby
 config/app_environment_variables.rb
+
+
+# ctags
+tags
+gems.tags
