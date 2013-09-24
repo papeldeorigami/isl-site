@@ -92,8 +92,8 @@ end
 
 # Default credentials for ComfortableMexicanSofa::HttpAuth
 # YOU REALLY WANT TO CHANGE THIS BEFORE PUTTING YOUR SITE LIVE
-ComfortableMexicanSofa::HttpAuth.username = 'username'
-ComfortableMexicanSofa::HttpAuth.password = 'password'
+ComfortableMexicanSofa::HttpAuth.username = ENV['HTTP_USER'] 
+ComfortableMexicanSofa::HttpAuth.password = ENV['HTTP_PASS']
 
 # If you need to inject some html in cms admin views you can define what partial
 # should be rendered into the following areas:

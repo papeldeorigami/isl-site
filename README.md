@@ -7,8 +7,11 @@ big features).
 
 ```
 bundle install
+ln -s config/app_environment_variables.rb.template config/app_environment_variables.rb
 foreman start
 ```
+
+IMPORTANT: edit the file config/app_environment_variables.rb and change the username/password
 
 ## Background information
 
