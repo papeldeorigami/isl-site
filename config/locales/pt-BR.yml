@@ -3,3 +3,8 @@
 
 pt-BR:
   hello: "Olá Mundo"
+  cms:
+    admin:
+        news_articles_menu: Notícias
+  models:
+    news_article: Notícia

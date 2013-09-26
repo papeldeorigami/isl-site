@@ -1,0 +1,8 @@
+- @news_articles.each do |news_article|
+      %h4 news_article.headline
+      %p news_article.content
+      %legend news_article.author
+- end unless @news_articles.nil?
+%br
+
+= link_to 'Todas as notícias', news_articles_path
