@@ -6,8 +6,8 @@ class NewsArticlesController < CmsAdmin::BaseController
     @news_articles = NewsArticle.all
   end
 
-  # GET /news_articles/latest_news
-  def latest_news
+  # GET /news_articles/_latest_news
+  def _latest_news
     @news_articles = NewsArticle.all
   end
 
