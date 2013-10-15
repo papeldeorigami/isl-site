@@ -5,6 +5,8 @@ ruby '1.9.3'
 
 # set our rails version (upgrades can always be a pain)
 gem 'rails', '~> 4.0'
+# add rails i18n due to translation missing error: pt-BR.time.formats.default
+gem 'rails-i18n'
 
 #gem 'jquery-rails'
 
@@ -13,6 +15,9 @@ gem 'bootstrap-sass'
 
 # a lightweight CMS
 gem 'comfortable_mexican_sofa', '~> 1.9'
+
+# a nice wysiwyg html editor
+gem 'tinymce-rails'
 
 # sunspot to implement site-wide search
 gem 'sunspot_rails'
