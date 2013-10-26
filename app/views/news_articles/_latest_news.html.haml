@@ -1,11 +1,8 @@
 - @news_articles = NewsArticle.all
 - @news_articles.each do |news_article|
-    %h4
-    = news_article.headline
-    %p 
-    = news_article.content
-    %legend
-    =  news_article.author
+    %strong= link_to news_article.headline, news_article
+    %p= news_article.content
+    %br
 - end unless @news_articles.nil?
 %br
 

@@ -1,6 +1,12 @@
 class NewsArticlesController < CmsAdmin::BaseController 
   before_action :set_news_article, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate, only: [:show]
+  skip_before_action :load_admin_site, only: [:show]
+  skip_before_action :set_locale, only: [:show]
+  skip_before_action :load_fixtures, only: [:show]
 
+  layout 'cms_admin', :except => :show
+  
   # GET /news_articles
   def index
     @news_articles = NewsArticle.all

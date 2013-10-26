@@ -7,7 +7,7 @@ big features).
 
 ```
 bundle install
-ln -s config/app_environment_variables.rb.template config/app_environment_variables.rb
+cp config/app_environment_variables.rb.template config/app_environment_variables.rb
 foreman start
 ```
 
@@ -47,4 +47,8 @@ nice identifiers. Our html views became actually simpler than before.
 Again, all stylesheets and existing code kept working, but this time much
 better integrated. This gem rocks!
 
+### Deciding the richtext editor
 
+A cool thing about Comfortable Mexican Sofa is that we can easily switch the richtext
+editor. We've decided for tinymce because it presents some nice plugins and it is still
+fast.
