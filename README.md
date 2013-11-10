@@ -8,6 +8,10 @@ big features).
 ```
 bundle install
 cp config/app_environment_variables.rb.template config/app_environment_variables.rb
+sudo apt-get install openjdk-7-jre
+rake db:migrate
+rake db:seed
+rake comfortable_mexican_sofa:fixtures:import FROM=isl-site TO=isl-site
 foreman start
 ```
 
