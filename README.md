@@ -8,7 +8,7 @@ big features).
 ```
 bundle install
 cp config/app_environment_variables.rb.template config/app_environment_variables.rb
-sudo apt-get install openjdk-7-jre
+sudo apt-get install openjdk-7-jre postgresql postgresql-server-dev-9.1
 rake db:migrate
 rake db:seed
 rake comfortable_mexican_sofa:fixtures:import FROM=isl-site TO=isl-site
@@ -56,3 +56,14 @@ better integrated. This gem rocks!
 A cool thing about Comfortable Mexican Sofa is that we can easily switch the richtext
 editor. We've decided for tinymce because it presents some nice plugins and it is still
 fast.
+
+
+### Appendix: settings up RVM
+
+```
+sudo apt-get install curl
+echo progress-bar >> ~/.curlrc
+\curl -L https://get.rvm.io | bash
+echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile
+echo "source $HOME/.rvm/scripts/rvm" >> ~/.bashrc
+```
