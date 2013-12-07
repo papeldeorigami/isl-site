@@ -1,5 +1,4 @@
 class NewsArticle < ActiveRecord::Base
-  searchable do  
-    text :headline, :content
-  end  
+  include PgSearch
+  multisearchable :against => [:headline, :content]
 end

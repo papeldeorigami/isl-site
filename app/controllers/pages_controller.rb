@@ -1,8 +1,5 @@
 class PagesController < ApplicationController
   def index
-    @search = Cms::Page.search do
-      keywords params[:"search-query"]
-    end
-    @pages = @search.results
+    @pages = PgSearch.multisearch(params[:"search-query"])
   end
 end

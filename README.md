@@ -5,10 +5,24 @@ big features).
 
 ## Installation
 
+Warning: this is for a test environment only! Make sure to understand and review each command
+before putting into production
+
+Postgresql installation (as for Ubuntu in November 2013):
+```
+sudo apt-get install postgresql postgresql-server-dev-9.1
+```
+
+Postgresql setup: edit the pg_hba.conf file, change admin access from peer to trust:
+```
+# local   all             postgres                                peer
+local   all             postgres                                trust
+```
+
+Rails app setup:
 ```
 bundle install
 cp config/app_environment_variables.rb.template config/app_environment_variables.rb
-sudo apt-get install openjdk-7-jre postgresql postgresql-server-dev-9.1
 rake db:migrate
 rake db:seed
 rake comfortable_mexican_sofa:fixtures:import FROM=isl-site TO=isl-site
@@ -66,4 +80,5 @@ echo progress-bar >> ~/.curlrc
 \curl -L https://get.rvm.io | bash
 echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile
 echo "source $HOME/.rvm/scripts/rvm" >> ~/.bashrc
+rvm gemset create comfy
 ```

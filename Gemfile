@@ -14,22 +14,26 @@ gem 'rails-i18n'
 gem 'bootstrap-sass'
 
 # a lightweight CMS
-gem 'comfortable_mexican_sofa', '~> 1.9'
+gem 'comfortable_mexican_sofa', '~> 1.11'
 
 # a nice wysiwyg html editor
 gem 'tinymce-rails'
 
-# sunspot to implement site-wide search
-gem 'sunspot_rails'
+# implement full text search with postgresql native features
+gem 'pg_search'
 
-# to start/stop Solr
-gem 'sunspot_solr'
+# nokogiri used for parsing search results
+gem 'nokogiri'
 
 # use the thin server by default (because webrick must be avoided, this is what I've learned)
 gem 'thin'
 
 # for configuring startup processes
 gem "foreman"
+
+# this specific postgresql version is supported by Heroku
+#gem 'pg', '0.12.2'
+gem 'pg', '0.15.1'
 
 group :development do
 	# because I like BDD
@@ -56,12 +60,6 @@ end
 
 group :development, :test do
 	gem 'debugger' unless ENV["RM_INFO"]
-	gem 'sqlite3'
-end
-
-group :production do
-	# this specific postgresql version is supported by Heroku
-	gem 'pg', '0.12.2'
 end
 
 group :assets do
