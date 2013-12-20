@@ -11,9 +11,10 @@ before putting into production
 Postgresql installation (as for Ubuntu in November 2013):
 ```
 sudo apt-get install postgresql postgresql-server-dev-9.1
+sudo apt-get install imagemagick librmagick-ruby libmagickwand-dev
 ```
 
-Postgresql setup: edit the pg_hba.conf file, change admin access from peer to trust:
+Postgresql setup (for dev machine only): edit the pg_hba.conf file, change admin access from peer to trust:
 ```
 # local   all             postgres                                peer
 local   all             postgres                                trust
