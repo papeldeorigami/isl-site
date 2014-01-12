@@ -1,3 +1,6 @@
 06/12
 page.truncated_text returns ne...
 
+
+TODO 2013-12-25 Implementar noticias em HTML
+

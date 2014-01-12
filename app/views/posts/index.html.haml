@@ -1,0 +1,24 @@
+%h1 Listing posts
+
+%table
+  %tr
+    %th Headline
+    %th Content
+    %th Author
+    %th
+    %th
+    %th
+
+  - @posts.each do |post|
+    %tr
+      %td= post.headline
+      %td= post.content
+      %td= post.author
+      %td= link_to 'Show', post
+      %td= link_to 'Edit', edit_post_path(post)
+      %td= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
+  - end unless @posts.nil?
+
+%br
+
+= link_to 'New Post', new_post_path

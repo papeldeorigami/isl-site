@@ -1,0 +1,10 @@
+- @posts = Post.latest
+- @posts.each do |post|
+    %h3= link_to post.headline, post
+    %p= post.content
+    %p= post.author
+    %br
+- end unless @posts.nil?
+%br
+
+= link_to 'Todas as notícias', posts_path

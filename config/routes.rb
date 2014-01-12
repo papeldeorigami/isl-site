@@ -1,5 +1,5 @@
 IslSite::Application.routes.draw do
-  resources :news_articles
+  resources :posts
 
   get '/search', to: 'search#index'
   

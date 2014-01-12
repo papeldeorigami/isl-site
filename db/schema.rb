@@ -133,18 +133,18 @@ ActiveRecord::Schema.define(version: 20131121233412) do
   add_index "cms_snippets", ["site_id", "identifier"], name: "index_cms_snippets_on_site_id_and_identifier", unique: true, using: :btree
   add_index "cms_snippets", ["site_id", "position"], name: "index_cms_snippets_on_site_id_and_position", using: :btree
 
-  create_table "news_articles", force: true do |t|
-    t.string   "headline"
-    t.text     "content"
-    t.string   "author"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "pg_search_documents", force: true do |t|
     t.text     "content"
     t.integer  "searchable_id"
     t.string   "searchable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", force: true do |t|
+    t.string   "headline"
+    t.text     "content"
+    t.string   "author"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

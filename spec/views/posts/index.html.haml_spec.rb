@@ -1,14 +1,14 @@
 require 'spec_helper'
 
-describe "news_articles/index" do
+describe "posts/index" do
   before(:each) do
-    assign(:news_articles, [
-      stub_model(NewsArticle,
+    assign(:posts, [
+      stub_model(Post,
         :headline => "Headline",
         :content => "MyText",
         :author => "Author"
       ),
-      stub_model(NewsArticle,
+      stub_model(Post,
         :headline => "Headline",
         :content => "MyText",
         :author => "Author"
@@ -16,7 +16,7 @@ describe "news_articles/index" do
     ])
   end
 
-  it "renders a list of news_articles" do
+  it "renders a list of posts" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Headline".to_s, :count => 2

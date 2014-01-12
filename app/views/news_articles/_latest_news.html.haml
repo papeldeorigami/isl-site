@@ -1,9 +1,0 @@
-- @news_articles = NewsArticle.all
-- @news_articles.each do |news_article|
-    %strong= link_to news_article.headline, news_article
-    %p= news_article.content
-    %br
-- end unless @news_articles.nil?
-%br
-
-= link_to 'Todas as notícias', news_articles_path

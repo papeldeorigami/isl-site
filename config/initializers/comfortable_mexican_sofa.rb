@@ -102,4 +102,4 @@ ComfortableMexicanSofa::HttpAuth.password = ENV['HTTP_PASS']
 #   ComfortableMexicanSofa::ViewHooks.add(:navigation, '/layouts/admin/navigation')
 #   ComfortableMexicanSofa::ViewHooks.add(:html_head, '/layouts/admin/html_head')
 #   ComfortableMexicanSofa::ViewHooks.add(:page_form, '/layouts/admin/page_form')
-ComfortableMexicanSofa::ViewHooks.add(:navigation, '/cms/admin/news_articles_menu')
+ComfortableMexicanSofa::ViewHooks.add(:navigation, '/cms/admin/posts_menu')
