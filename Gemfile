@@ -13,8 +13,8 @@ gem 'rails-i18n'
 # bootstrap for styling our pages
 gem 'bootstrap-sass'
 
-# a lightweight CMS
-gem 'comfortable_mexican_sofa', '~> 1.11'
+# Blog Engine for ComfortableMexicanSofa
+gem 'comfy_blog', '~> 1.1.0'
 
 # a nice wysiwyg html editor
 gem 'tinymce-rails'

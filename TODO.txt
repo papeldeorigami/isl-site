@@ -1,3 +1,4 @@
+TODO 2013-01-21 extract pg_search code to a separated gem 
 TODO 2013-01-15 fix admin/posts#create 
 done TODO 2013-01-12 implement routes to admin/posts
 TODO 2013-12-25 implement HTML posts body
